@@ -1,0 +1,8 @@
+.link_formated{
+	color: black;
+	text-decoration: none;
+	transition: 500ms;
+	&:hover{
+		color: map-get($colors, 'blanco');
+	}
+}

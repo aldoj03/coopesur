@@ -1,0 +1,46 @@
+
+/* VARIABLES GLOBALES; MIXINS Y FUNCIONES GENERALES */
+@import 'utilities/vars';
+@import 'utilities/mixins';
+
+
+/* COMPONENTES */
+
+@import 'components/links';
+@import 'components/navs';
+@import 'components/gota_fecha';
+@import 'components/icons';
+@import 'components/button';
+
+
+
+
+/* NORMALIZE Y TIPOGRAFIAS */
+@import 'base/normalize';
+@import 'base/typo';
+@import 'base/base';
+
+
+
+
+
+/* LAYOUTS */
+@import 'layouts/header';
+@import 'layouts/baner';
+@import 'layouts/breadcrumbs';
+/* contiene main article sidebar y related articles */
+@import 'layouts/main_content';
+@import 'layouts/footer';
+
+
+
+
+
+
+
+
+
+
+
+
+

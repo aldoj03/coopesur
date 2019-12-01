@@ -1,0 +1,43 @@
+.section2_baner{
+	height: 310px;
+	background: url('../img/img-principal-ib.jpg');
+    background-position-y: bottom;
+	padding: 18px 110px 18px 100px;
+	nav{
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid white;
+		margin-left: 16px;
+
+		& > a{
+			position: relative;
+			top: 7px
+		}
+	}
+
+	h1{
+		text-align: center;
+		margin-top: 75px;
+	}
+}
+
+
+.nav--main{
+	margin:0px 40px 19px 10px;
+	align-items: flex-end;
+	&__img{
+		width: 178px;
+	}
+
+	&__item{
+		margin: 0px 10px;
+	
+		a{
+			font-size: 15.4px;
+			letter-spacing: .7px;
+			&:hover{
+				color: map-get($colors,mostaza);
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+@mixin classColors($name, $color) {
+  .bg-#{$name} {
+    background: $color;
+  }
+
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+@mixin classDisplay($display) {
+  .d-#{$display} {
+    display: $display;
+  }
+}

@@ -1,0 +1,99 @@
+/* FOOTER */
+footer {
+  h2 {
+    text-align: center;
+    position: relative;
+    margin-right: 57px;
+    letter-spacing: 1px;
+
+    &::before {
+      content: "";
+      background: map-get($colors, mostaza);
+      width: 363px;
+      height: 2px;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      background: map-get($colors, mostaza);
+      width: 363px;
+      height: 2px;
+      position: absolute;
+      bottom: 12px;
+      right: 0;
+    }
+  }
+
+  .#{&}__content {
+    padding-top: 45px;
+    justify-content: space-between;
+  }
+
+  .#{&}__separator {
+    height: 110px;
+  }
+  .#{&}__background {
+    padding: 75px 147px 40px 206px;
+    background: url("../../img/footer.jpg");
+  }
+
+  /* DATOS DE LA EMPRESA */
+  .#{&}__info {
+    letter-spacing: 0.6px;
+    width: 416px;
+    flex-direction: column;
+    margin: 40px 0px 0px 0px;
+    padding-left: 50px;
+
+    img {
+      width: 19px;
+      margin-right: 8px;
+    }
+    p {
+      align-items: flex-start;
+      &:last-child {
+        padding-right: 55px;
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* FORMULARION*/
+form {
+  flex-direction: column;
+  position: relative;
+  width: 363px;
+  padding-left: 1px;
+
+  input:not([type="submit"]) {
+    padding: 11px;
+    margin-bottom: 26px;
+  }
+  textarea {
+    margin-bottom: 39px;
+  }
+
+  input[type="submit"] {
+    width: 110px;
+    font-size: 17px;
+    padding: 8px 8px;
+    margin-left: 2px;
+  }
+
+  /*BARRA LATERAL*/
+  &::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    right: -115px;
+    width: 2px;
+    height: 150px;
+    background: map-get($colors, mostaza);
+  }
+}
