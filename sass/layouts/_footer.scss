@@ -1,5 +1,5 @@
 /* FOOTER */
-footer {
+.footer {
   h2 {
     text-align: center;
     position: relative;
@@ -25,24 +25,52 @@ footer {
       bottom: 12px;
       right: 0;
     }
+
+    @include mediaquery(1110px) {
+      &::after,
+      &::before {
+        width: 25%;
+      }
+    }
   }
 
-  .#{&}__content {
+  &__content {
     padding-top: 45px;
     justify-content: space-between;
+    flex-flow: wrap;
+    @include mediaquery(914px) {
+      & {
+       justify-content: center;
+      }
+    }
   }
 
-  .#{&}__separator {
+  &__separator {
     height: 110px;
   }
-  .#{&}__background {
+  &__background {
     padding: 75px 147px 40px 206px;
     background: url("../../img/footer.jpg");
+    @include mediaquery(1320px) {
+      & {
+        padding: 75px 100px 40px 150px;
+      }
+    }
+    @include mediaquery(1200px) {
+      & {
+        padding: 75px 50px 40px 100px;
+      }
+    }
+    @include mediaquery(1110px) {
+      & {
+        padding: 75px 20px 40px 60px;
+      }
+    }
   }
 
   /* DATOS DE LA EMPRESA */
-  .#{&}__info {
-    letter-spacing: 0.6px;
+  &__info {
+    letter-spacing: 0.8px;
     width: 416px;
     flex-direction: column;
     margin: 40px 0px 0px 0px;
@@ -54,12 +82,22 @@ footer {
     }
     p {
       align-items: flex-start;
+      padding: 1px 0px;
       &:last-child {
         padding-right: 55px;
         img {
           width: 14px;
         }
       }
+    }
+  }
+
+  .icons_container {
+    text-align: center;
+    margin-right: 15px;
+
+    & > div {
+      margin-right: 36px;
     }
   }
 }
@@ -72,11 +110,20 @@ form {
   padding-left: 1px;
 
   input:not([type="submit"]) {
-    padding: 11px;
-    margin-bottom: 26px;
+    padding: 13px 13px 13px 15px;
+    margin-bottom: 25px;
+    border: none;
+    &::placeholder {
+      color: map-get($colors, girs--oscuro);
+    }
   }
   textarea {
-    margin-bottom: 39px;
+    margin-bottom: 31px;
+    padding: 15px 10px 2px 13px;
+    border: none;
+    &::placeholder {
+      color: map-get($colors, girs--oscuro);
+    }
   }
 
   input[type="submit"] {
@@ -84,16 +131,54 @@ form {
     font-size: 17px;
     padding: 8px 8px;
     margin-left: 2px;
+    margin-bottom: 97px;
+    @include mediaquery(914px) {
+      & {
+        margin-bottom: 0;
+      }
+    }
   }
 
   /*BARRA LATERAL*/
   &::after {
     content: "";
     position: absolute;
-    top: 34px;
+    top: 37px;
     right: -115px;
     width: 2px;
     height: 150px;
     background: map-get($colors, mostaza);
+
+    @include mediaquery(1000px) {
+      & {
+        right: -50px;
+      }
+    }
+    @include mediaquery(914px) {
+      & {
+        visibility: hidden;
+      }
+    }
+  }
+
+  @include mediaquery(914px) {
+    & {
+     width: 70%;
+    }
+  }
+}
+
+.powered-by {
+  text-align: center;
+  padding: 8px 0px 15px 0px;
+  font-size: 15px;
+
+  img:first-of-type {
+    width: 55px;
+  }
+  img:last-of-type {
+    width: 25px;
+    position: relative;
+    top: 2px;
   }
 }

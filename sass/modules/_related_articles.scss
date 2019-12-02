@@ -95,6 +95,14 @@
     }
   }
 
-  
-
+  @include mediaquery(1165px) {
+    & {
+      padding-left: 80px;
+    }
+  }
+  @include mediaquery(990px) {
+    & {
+      padding-left: 0px;
+    }
+  }
 }

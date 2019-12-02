@@ -1,0 +1,38 @@
+.modal{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items:center ;
+    transition: 500ms;
+
+    &__container{
+        position: relative;
+        width: 60%;
+        height: 60%;
+        text-align: center;
+        padding: 12px;
+        transition: 500ms;
+        box-shadow: 2px 0px 16px 1px #414141cc;
+        border-radius: 4px;
+
+        
+    }
+    .close{
+        position: absolute;
+        right: 0;
+        top:0;
+        margin: 12px;
+        font-size: 20px;
+        cursor: pointer;
+    };
+
+    img{
+        width: 50%;
+        background: red;
+        height: 200px;
+    }
+}

@@ -1,0 +1,32 @@
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    background: map-get($colors ,blanco );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__animation{
+        width: 50px;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: .8s;
+        animation-name: load;
+        @keyframes load {
+
+            from{
+                transform: rotate(0deg);
+                transform-origin: center;
+             
+            }
+            to{
+                transform: rotate(180deg);
+
+            }
+            
+        }
+    }
+}

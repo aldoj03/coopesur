@@ -6,7 +6,8 @@ $colors: (
     gris--claro: #f0f0f0,
     gris--oscuro: #7F7F7F,
     blanco: #FFFFFF,
+    negro: black
   );
 
-  $displays: inline-block, flex
+  $displays: inline-block, flex, fixed;
   

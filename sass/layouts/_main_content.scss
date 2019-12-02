@@ -7,7 +7,20 @@
   );
   flex-direction: row;
   flex-flow: wrap;
-  padding: 40px 40px 60px 40px;
+  padding: 40px 60px 60px 40px;
+  justify-content: space-between;
+
+  @include mediaquery(1320px) {
+    & {
+      padding: 40px 0px 60px 0px;
+    }
+  }
+
+  @include mediaquery(990px) {
+    & {
+      justify-content: center;
+    }
+  }
 }
 
 /* CONTENEDOR DE ARTICULOS -> MAIN ARTICLES Y RELATED */
@@ -17,10 +30,33 @@
   width: min-content;
   flex-direction: column;
   align-items: center;
-  
+
   & > a {
     margin-right: 79px;
     font-size: 17px;
+
+    @include mediaquery(1215px) {
+      & {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  @include mediaquery(1220px) {
+    & {
+      padding: 120px 18px 50px 45px;
+    }
+  }
+  @include mediaquery(1165px) {
+    & {
+      width: 54%;
+    }
+  }
+
+  @include mediaquery(990px) {
+    & {
+      width: 80%;
+    }
   }
 }
 

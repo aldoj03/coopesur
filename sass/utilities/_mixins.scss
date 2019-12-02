@@ -13,3 +13,12 @@
     display: $display;
   }
 }
+
+
+@mixin mediaquery($max-value){
+
+  @media screen and (max-width: $max-value) {
+    @content
+  }
+
+}

@@ -7,10 +7,11 @@
 /* COMPONENTES */
 
 @import 'components/links';
-@import 'components/navs';
 @import 'components/gota_fecha';
 @import 'components/icons';
 @import 'components/button';
+@import 'components/modal';
+
 
 
 
@@ -31,6 +32,8 @@
 /* contiene main article sidebar y related articles */
 @import 'layouts/main_content';
 @import 'layouts/footer';
+@import 'layouts/loader';
+
 
 
 

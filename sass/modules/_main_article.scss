@@ -1,79 +1,81 @@
-.section4_main_article{
-	box-shadow: 2px 0px 16px 1px #414141cc;
-	position: relative;
-	width: 725px;
-	padding: 13px;
-	padding-bottom: 16px;
-		figure{
-			width: 655px;
-			position: relative;
-			margin: 0 auto;
-			height: 348px;
-			top: -85px;
+.section4_main_article {
+  box-shadow: 2px 0px 16px 1px #414141cc;
+  position: relative;
+  width: 725px;
+  padding: 13px;
+  padding-bottom: 16px;
+  figure {
+    width: 655px;
+    position: relative;
+    margin: 0 auto;
+    height: 348px;
+    top: -85px;
 
-			img{
-				max-width: 100%;
-				height: 100%
+    @include mediaquery(1165px) {
+      & {
+        width: 97%;
+      }
+    }
 
-			}
-
-		}
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  @include mediaquery(1165px) {
+    & {
+      width: 100%;
+    }
+  }
 }
 
-.article_content{
-	margin-top: -24px;
-	padding: 0px 65px 112px 87px;
-	position: relative;
+.article_content {
+  margin-top: -24px;
+  padding: 0px 65px 112px 87px;
+  position: relative;
 
+  h3 {
+    font-size: 26.5px;
+    margin-bottom: 22px;
+    position: relative;
+    line-height: 0.8;
+  }
 
-	h3{
-		font-size: 26.5px;
-		margin-bottom: 22px;
-		position: relative;
-		line-height: .8;
+  &:before {
+    content: "";
+    width: 70px;
+    position: absolute;
+    height: 4px;
+    left: -12px;
+    top: 10px;
+    border-bottom: 4px solid map-get($colors, vinotinto);
+  }
 
-	}
-
-	&:before{
-		content: '';
-		width: 70px;
-		position: absolute;
-		height: 4px;
-		left: -12px;
-		top: 10px;
-		border-bottom: 4px solid map-get($colors,vinotinto)
-	};
-
-	span{
-		letter-spacing: .8px;
-
-	}
-	p{
-		letter-spacing: .4px;
-		line-height: 29px;
-		font-size: 15.7px;
-		margin-top: 27px;
-		}
-
+  span {
+    letter-spacing: 0.8px;
+  }
+  p {
+    letter-spacing: 0.4px;
+    line-height: 29px;
+    font-size: 15.7px;
+    margin-top: 27px;
+  }
 }
 
+.article_tags {
+  border-top: 3px solid #b5b5b5;
+  margin: 8px 32px 25px 40px;
+  padding: 0px 0px 0px 20px;
+  display: flex;
+  align-items: center;
 
-.article_tags{
-	
-	border-top: 3px solid #b5b5b5;
-	margin: 8px 32px 25px 40px;
-	padding: 0px 0px 0px 20px;
-	display: flex;
-	align-items: center;
-		
-	i{
-		font-size: 27px;
-	}
-	
+  i {
+    font-size: 27px;
+  }
 }
-.tags_container{
-	margin: 13px 0px 0px 2px;
-	display: flex;
-	flex-flow: wrap;
-	align-content: center;
+.tags_container {
+  margin: 13px 0px 0px 2px;
+  display: flex;
+  flex-flow: wrap;
+  align-content: center;
 }
