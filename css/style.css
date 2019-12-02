@@ -1014,7 +1014,7 @@ header {
     height: 110px; }
   .footer__background {
     padding: 75px 147px 40px 206px;
-    background: url("../../img/footer.jpg"); }
+    background: url("../img/footer.jpg"); }
     @media screen and (max-width: 1320px) {
       .footer__background {
         padding: 75px 100px 40px 150px; } }
