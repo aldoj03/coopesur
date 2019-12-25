@@ -1,0 +1,54 @@
+/* GOTA DE FECHA PARA LAS IMAGENES */ 
+.gota_fecha{
+    position: absolute;
+    bottom: 0px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+	font-size: 24px;
+    
+    &--small{
+        width: 59px;
+        height: 59px;
+        font-size: 16.5px;
+    }
+    &--big{
+        width: 100px;
+        height: 100px;
+        font-size: 32px;
+    }
+
+    &--derecha{
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-top-right-radius: 0px;
+    top: 0;
+    right: 0;
+    }
+    
+ 
+    &__mes{
+        font-size: 16px;
+        color: #f0f0f073;
+
+        &--small{
+        font-size: 14px;
+        color: #f0f0f073;
+
+        }
+        &--big{
+        font-size: 21px;
+        color: #f0f0f073;
+        letter-spacing: 1px;
+
+        }
+    }
+
+}

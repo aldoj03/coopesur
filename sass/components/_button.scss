@@ -1,0 +1,34 @@
+/* BOTONES */ 
+.btn{
+    margin: 5px 5px;
+    padding: 4px 8px;
+    outline: none;
+    border-radius: 8px;
+    font-size: 15.7px;
+    transition: 500ms;
+    &--gris{
+        border: 2px solid map-get($colors, gris);	
+        color: map-get($colors, gris);
+        &:hover{
+            background: map-get($colors , gris--oscuro );
+            color: white;
+        }
+    }
+    &--vinotinto{
+        border: 2px solid map-get($colors, vinotinto);	
+        color: map-get($colors, vinotinto);
+        &:hover{
+            background: map-get($colors , vinotinto );
+            color: white;
+        }
+    }
+    &--mostaza{
+        border: 2px solid map-get($colors, mostaza);	
+        color: map-get($colors, mostaza);
+        background: transparent;
+        outline: none;
+        &:hover{
+            background: map-get($colors , mostaza );
+        }
+    }
+}

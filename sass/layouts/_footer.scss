@@ -1,0 +1,186 @@
+/* FOOTER */
+.footer {
+  h2 {
+    text-align: center;
+    position: relative;
+    margin-right: 57px;
+    letter-spacing: 1px;
+
+    /* LINEAS MOSTAZA*/
+    &::before {
+      content: "";
+      background: map-get($colors, mostaza);
+      width: 363px;
+      height: 2px;
+      position: absolute;
+      bottom: 12px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      background: map-get($colors, mostaza);
+      width: 363px;
+      height: 2px;
+      position: absolute;
+      bottom: 12px;
+      right: 0;
+    }
+
+    @include mediaquery(1110px) {
+      &::after,
+      &::before {
+        width: 25%;
+      }
+    }
+  }
+
+  &__content {
+    padding-top: 45px;
+    justify-content: space-between;
+    flex-flow: wrap;
+    @include mediaquery(914px) {
+      & {
+        justify-content: center;
+      }
+    }
+  }
+  /* SEPARADOR VINOTINTO */
+  &__separator {
+    height: 110px;
+  }
+  /* FONDO*/
+  &__background {
+    padding: 75px 147px 40px 206px;
+    background: url("../img/footer.jpg");
+    @include mediaquery(1320px) {
+      & {
+        padding: 75px 100px 40px 150px;
+      }
+    }
+    @include mediaquery(1200px) {
+      & {
+        padding: 75px 50px 40px 100px;
+      }
+    }
+    @include mediaquery(1110px) {
+      & {
+        padding: 75px 20px 40px 60px;
+      }
+    }
+  }
+
+  /* DATOS DE LA EMPRESA */
+  &__info {
+    letter-spacing: 0.8px;
+    width: 416px;
+    flex-direction: column;
+    margin: 40px 0px 0px 0px;
+    padding-left: 50px;
+
+    img {
+      width: 19px;
+      margin-right: 8px;
+    }
+    p {
+      align-items: flex-start;
+      padding: 1px 0px;
+      &:last-child {
+        padding-right: 55px;
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  .icons_container {
+    text-align: center;
+    margin-right: 15px;
+
+    & > div {
+      margin-right: 36px;
+    }
+  }
+}
+
+/* FORMULARIO*/
+form {
+  flex-direction: column;
+  position: relative;
+  width: 363px;
+  padding-left: 1px;
+
+  input:not([type="submit"]) {
+    padding: 13px 13px 13px 15px;
+    margin-bottom: 25px;
+    border: none;
+    &::placeholder {
+      color: map-get($colors, girs--oscuro);
+    }
+  }
+  textarea {
+    margin-bottom: 31px;
+    padding: 15px 10px 2px 13px;
+    border: none;
+    &::placeholder {
+      color: map-get($colors, girs--oscuro);
+    }
+  }
+
+  input[type="submit"] {
+    width: 110px;
+    font-size: 17px;
+    padding: 8px 8px;
+    margin-left: 2px;
+    margin-bottom: 97px;
+    @include mediaquery(914px) {
+      & {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  /*BARRA VERTICAL*/
+  &::after {
+    content: "";
+    position: absolute;
+    top: 37px;
+    right: -115px;
+    width: 2px;
+    height: 150px;
+    background: map-get($colors, mostaza);
+
+    @include mediaquery(1000px) {
+      & {
+        right: -50px;
+      }
+    }
+    @include mediaquery(914px) {
+      & {
+        visibility: hidden;
+      }
+    }
+  }
+
+  @include mediaquery(914px) {
+    & {
+      width: 70%;
+    }
+  }
+}
+
+.powered-by {
+  text-align: center;
+  padding: 8px 0px 15px 0px;
+  font-size: 15px;
+
+  a:first-of-type img{
+    width: 55px;
+  }
+  a:last-of-type img{
+    width: 25px;
+    position: relative;
+    top: 2px;
+  }
+}

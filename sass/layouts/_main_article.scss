@@ -1,0 +1,67 @@
+.section4_main_article{
+	box-shadow: 1px 0px 16px 0px #414141;
+	position: relative;
+	width: 725px;
+	padding: 13px;
+		figure{
+			width: 655px;
+			position: relative;
+			margin: 0 auto;
+			height: 350px;
+			top: -90px;
+
+			img{
+				max-width: 100%;
+				height: 100%
+
+			}
+
+		}
+}
+
+.article_content{
+	margin-top: -40px;
+	padding-left: 90px;
+	position: relative;
+	font-weight: 100;
+
+	&:before{
+		content: '';
+		width: 70px;
+		position: absolute;
+		height: 4px;
+		left: -12px;
+		top: 10px;
+		border-bottom: 4px solid map-get($colors,vinotinto)
+	};
+
+	p{
+		letter-spacing: .8px;
+		line-height: 30.8px
+		}
+
+
+	h3{
+		font-size: 24px;
+		position: relative;
+
+	}
+}
+
+
+
+
+.article_tags{
+	text-align: center;
+	border-top: 3px solid map-get($colors,gris--oscuro);
+	padding: 8px 10px;
+	
+	a{
+		margin:8px;
+		padding: 5px;
+		border-radius: 13px;
+		border: 1px solid map-get($colors, gris--oscuro);	
+	}
+
+	
+}

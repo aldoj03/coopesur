@@ -1,0 +1,35 @@
+
+/* ESTILOS GENERALES  */
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px
+} 
+
+/*CLASEs FONT_WEIGTH*/
+
+.fw-200{
+    font-weight: 100;
+}
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
+}
+
+/* genera clases de de background y texto*/
+@each $name,$color in $colors{
+	@include classColors($name,$color)
+}
+
+/* genera clases de display */
+@each $display in $displays {
+    @include classDisplay($display)
+}

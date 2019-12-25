@@ -1,0 +1,28 @@
+/* MIGAS DE PAN */
+.section3_breadcrumbs{
+	padding: 17px 105px 13px 96px;
+	.nav--bread{
+  	align-content: center;
+
+	  	&:first-child::before{
+			content: '';
+			position: relative;
+			left: 15px;
+			bottom: 2px;
+			width: 8px;
+			height:  8px;
+			align-self: center;
+			margin-right: 10px;
+			background: map-get($colors, gris--oscuro);
+		}
+
+  	}
+
+}
+
+.nav__item--bread{
+	font-size: 13px;
+	margin: 0px 16px
+
+
+}
